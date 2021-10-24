@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Threading;
 
 namespace OOPAssignment
 {
-    class Program
+   class Program
     {
         static void Main(string[] args)
         {
@@ -52,7 +53,7 @@ namespace OOPAssignment
                     // Output the car's current status
                     Car car = cars[i];
 
-                    Console.WriteLine(string.Concat("X: " + car.Coordinates.X, " ", "Y: " + car.Coordinates.Y, " ", car.Direction));
+                    Console.WriteLine(string.Concat("X: " + car.Coordinates.X, " ", "Y: " + car.Coordinates.Y, " ", (object)car.Direction));
                 }
 
                 Console.WriteLine("Oyun bitti!");
